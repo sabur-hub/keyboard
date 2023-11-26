@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2a1900;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d4af37;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Новые стили для клавиатуры */
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b0f00; /* Цвет фона клавиатуры */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Добавленный отступ снизу */
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    background-color: transparent; /* Темно-жёлтый цвет клавиш */
+    border: 1px solid darkslategrey; /* Белая граница */
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* Стили для пространства между рядами */
+.row-space {
+    height: 10px; /* Высота пространства между рядами */
+    width: 100%; /* Ширина пространства равна ширине клавиатуры */
+}
+
+.space-key {
+    width: 240px; /* Задаем ширину клавиши "пробел" */
+    /* Дополнительные стили, если нужно */
+}
+
+.fourth-row {
+    grid-column: 1 / -1; /* Занимает все колонки в строке */
+    text-align: center; /* Выравнивание текста по центру */
+    /* Дополнительные стили, если нужно */
+}
+
+/* Стили для элемента "result" */
+#result {
+    text-align: center;
+    margin-top: 20px; /* Отступ сверху */
+}
+#userInput{
+    font-size: 20px;
+    text-align: center; /* Центрирование текста по горизонтали */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+#targetText {
+    font-size: 20px;
+    text-align: center; /* Центрирование текста по горизонтали */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+
+footer a {
+    color: #d4af37;
+}
